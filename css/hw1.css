@@ -1,35 +1,26 @@
-h1 {
-  color: rgb(67, 145, 67);
-  font-size: 160%;
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 0.6fr 1.9fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header"
+    "nav content"
+    "footer footer";
 }
 
-.ueberschrift {
-  /* background: url("../images/a-room-at-the-beach.jpg") no-repeat 50%; */
-  background-color: red;
-  background-image: url("../images/a-room-at-the-beach.jpg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: contain;
-  height: 200px;
-  width: 50%;
+.header {
+  grid-area: header;
 }
 
-.logo {
-  /* width: 50px; */
-  height: 50px;
+.footer {
+  grid-area: footer;
 }
 
-header {
-  background: blue;
-  width: 80%;
+.nav {
+  grid-area: nav;
 }
 
-.logo {
-  width: 50vw;
-  background: red;
-}
-
-.logo2 {
-  width: 50%;
-  background: green;
+.content {
+  grid-area: content;
 }
