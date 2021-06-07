@@ -1,26 +1,22 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 0.5fr 1.5fr;
-  grid-template-rows: 0.6fr 1.9fr 0.5fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "header header"
-    "nav content"
-    "footer footer";
+nav {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.header {
-  grid-area: header;
+#content {
+  background-color: red;
+  width: 500px;
+  margin: 0 auto;
 }
 
-.footer {
-  grid-area: footer;
+a {
+  color: #777;
+  text-decoration: none;
+  margin: 0 20px;
 }
 
-.nav {
-  grid-area: nav;
-}
-
-.content {
-  grid-area: content;
+a.active {
+  color: #333;
+  text-decoration: underline;
+  font-weight: bold;
 }
